@@ -1,0 +1,20 @@
+{
+  "name": "wonderful-admin-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp default",
+    "watch": "gulp watch"
+  },
+  "keywords": [],
+  "author": "Muhibbudin Suretno",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  }
+}

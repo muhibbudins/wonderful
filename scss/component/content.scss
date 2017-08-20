@@ -1,0 +1,50 @@
+.content {
+	width: calc(100vw - 250px - 90px);
+	height: 100vh;
+	max-height: 100vh;
+	background-color: $white;
+	color: transparentize($black, 0.3);
+	float: left;
+	padding: 20px;
+	padding-top: 100px;
+	transition: all 0.3s ease-in-out;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	@include breakpoint(0, 1024px) {
+		width: calc(100vw - 25px - 90px);
+	}
+	@include breakpoint(xs) {
+		width: 100%;
+	}
+	&-inner {
+		display: block;
+		position: relative;
+	}
+	&-full {
+		width: 100%;
+	}
+	&-stretch {
+		width: 100%;
+		padding: 0;
+		padding-top: 70px;
+	}
+	&-flex {
+		width: 100%;
+		height: calc(100vh - 100px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		.title {
+			font-size: 36px;
+		}
+		.description {
+			font-size: 16px;
+			font-style: italic;
+			color: transparentize($black, 0.6);
+		}
+	}
+}

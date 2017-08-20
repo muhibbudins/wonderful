@@ -1,0 +1,90 @@
+.btn {
+	border: 0;
+	padding: 10px 16px;
+	border-radius: 8px;
+	
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
+		outline: none;
+	}
+	&-outline {
+		background-color: transparent;
+		border: 1px solid;
+	}
+	&-flat {
+		border-radius: 0;
+	}
+	&-capital {
+		text-transform: uppercase;
+	}
+
+	&-primary {
+		color: $white;
+		background-color: $belizehole;
+	}
+	&-success {
+		color: $white;
+		background-color: $nephritis;
+	}
+	&-warning {
+		color: $white;
+		background-color: $sunflower;
+	}
+	&-default {
+		color: $asbestos;
+		background-color: $clouds;
+	}
+	&-danger {
+		color: $white;
+		background-color: $alizarin;
+	}
+	&-link {
+		color: $peterriver;
+		background-color: $clouds;
+	}
+	&-info {
+		color: $white;
+		background-color: $peterriver;
+	}
+	&-white {
+		color: $peterriver;
+		background-color: $clouds;
+	}
+}
+
+.btn-outline {
+	&-primary {
+		color: $belizehole;
+		border-color: $belizehole;
+	}
+	&-success {
+		color: $nephritis;
+		border-color: $nephritis;
+	}
+	&-warning {
+		color: $sunflower;
+		border-color: $sunflower
+	}
+	&-default {
+		color: $silver;
+		border-color: $silver;
+	}
+	&-danger {
+		color: $alizarin;
+		border-color: $alizarin;
+	}
+	&-link {
+		color: $peterriver;
+		border-color: $peterriver;
+	}
+	&-info {
+		color: $peterriver;
+		border-color: $peterriver;
+	}
+	&-white {
+		color: $silver;
+		border-color: $silver;
+	}
+}

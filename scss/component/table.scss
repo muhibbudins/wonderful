@@ -1,0 +1,17 @@
+.table {
+
+	tbody,
+	thead {
+
+		tr {
+			th {
+				border-top: 0;
+				border-bottom: 1px solid $clouds;
+				text-align: center;
+			}
+			td {
+				text-align: center;
+			}
+		}
+	}
+}

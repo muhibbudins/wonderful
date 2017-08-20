@@ -1,0 +1,8 @@
+body {
+	background-color: $white;
+	font-size: 13px;
+	
+	@include breakpoint(xs) {
+		background-color: $black;
+	}
+}

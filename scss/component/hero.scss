@@ -1,0 +1,55 @@
+.hero {
+	width: 100%;
+	height: 350px;
+	background-image: url(../img/bg-hero.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	position: relative;
+	margin-bottom: 20px;
+
+	&-overlay {
+		width: 100%;
+		height: 350px;
+		position: absolute;
+		background-color: transparentize(#252525, 0.4);
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-inner {
+		display: block;
+		position: relative;
+		max-width: 500px;
+		color: transparentize($white, 0.2);
+		text-align: center;
+
+		@include breakpoint(xs) {
+			width: 100%;
+			padding: 15px;
+		}
+	}
+	&-avatar {
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+		background-color: $white;
+		margin: 0 auto;
+		overflow: hidden;
+
+		img {
+			width: auto;
+			height: 125px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	&-title {
+		font-size: 22px;
+		margin: 10px 0;
+	}
+	&-description {
+		font-size: 12px;
+	}
+}

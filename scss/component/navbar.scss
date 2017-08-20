@@ -1,0 +1,134 @@
+.navbar {
+	background-color: $white;
+	border: 0;
+	min-height: auto;
+	box-shadow: -1px 2px 11px 4px rgba(66, 72, 78, 0.10);
+	z-index: 300;
+
+	.container,
+	&-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-right {
+		border-left: 1px solid transparentize($black, 0.9);
+	}
+	&-responsive {
+		position: fixed;
+		width: 200px;
+		height: 100vh;
+		transition: all 0.3s ease-in-out;
+		margin-right: -100%;
+		background-color: $white;
+		right: 0;
+		top: 0;
+		z-index: 280;
+		border-left: 1px solid transparentize($black, 0.9);
+		padding: 10px;
+		padding-top: 80px;
+
+		&.active {
+			margin-right: 0;
+		}
+		.nav {
+			.item {
+				font-size: 14px;
+				padding: 8px 16px;
+				color: transparentize($black, 0.5);
+				text-transform: capitalize;
+
+				&:hover {
+					color: transparentize($nephritis,0.4);
+					background-color: transparentize($black, 0.97);
+				}
+				i.fa {
+					margin-right: 10px;
+				}
+				&.btn {
+					padding: 6px 10px;
+					margin: 14px 16px;
+					border-radius: 20px;
+					transition: all 0.3s ease-in-out;
+					font-size: 14px;
+					background-color: transparent;
+					color: $green;
+					border-color: $green;
+				}
+			}
+		}
+	}
+	.item,
+	.navbar-brand {
+		padding: 20px 20px;
+		line-height: normal;
+		height: auto;
+		font-size: 14px;
+		color: transparentize($black, 0.35) !important;
+
+		i.fa {
+			margin-right: 5px;
+			font-size: 16px;
+
+			@include breakpoint(0, 1024px) {
+				display: none;
+			}
+		}
+		b {
+			color: $nephritis;
+		}
+		@include breakpoint(0, 1024px) {
+			padding: 20px 15px;
+		}
+	}
+	.navbar-brand {
+		color: transparentize($black, 0.60) !important;
+
+		i.fa {
+			@include breakpoint(xs) {
+				display: block;
+				font-size: 24px;
+			}
+		}
+		img {
+			width: auto;
+			height: 30px;
+		}
+	}
+	.item {
+		&.btn {
+			padding: 10px 20px;
+			margin: 10px 6px;
+			border-radius: 20px;
+			color: $white !important;
+			transition: all 0.2s ease-in-out;
+			font-size: 13px;
+			border: 1px solid transparent;
+
+			&:hover {
+				color: $sunflower !important;
+				border-color: $sunflower;
+			}
+		}
+
+		&:hover {
+			color: $green !important;
+		}
+	}
+
+	@include breakpoint(xs) {
+		.container {
+			display: block;
+			margin: 0;
+		}
+		.nav {
+			display: none;
+		}
+		.navbar-header {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

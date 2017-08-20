@@ -1,0 +1,132 @@
+.sidebar {
+	max-width: 90px;
+	height: 100vh;
+	background: #DCE35B;
+	background: -webkit-linear-gradient(to top, #45B649, #DCE35B);
+	background: linear-gradient(to top, #45B649, #DCE35B);
+	float: left;
+	padding-top: 70px;
+	transition: all 0.4s ease-in-out;
+	z-index: 290;
+
+	@include breakpoint(xs) {
+		transition: all 0.3s ease-in-out;
+		margin-left: -100%;
+		position: fixed;
+
+		&.active {
+			margin-left: 0;
+		}
+	}
+	.nav:not(.nav-stacked) {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: transparent;
+
+		.item {
+			font-size: 20px;
+			color: transparentize($white, 0.4);
+			padding: 20px 33px;
+			border-top: 1px solid transparentize($white, 0.7);
+			border-radius: 0;
+
+			&:first-child {
+				border-top: 0;
+			}
+			&:last-child {
+				border-bottom: 1px solid transparentize($white, 0.7);
+			}
+			&:hover,
+			&:focus,
+			&:visited {
+				background-color: transparent;
+				color: transparentize($white, 0);
+			}
+			&.active {
+				color: transparentize($white, 0);
+				font-size: 24px;
+				
+				&:before {
+					visibility: visible;
+				}
+			}
+			&:before {
+				content: '';
+				width: 20px;
+				height: 20px;
+				background-color: #fff;
+				position: absolute;
+				right: -7px;
+				top: 50%;
+				transform: rotate(45deg) translateY(-50%);
+				visibility: hidden;
+			}
+		}
+	}
+	&-menu {
+		width: 250px;
+		height: 100vh;
+		border-right: 1px solid transparentize($black, 0.9);
+		float: left;
+		padding: 10px;
+		padding-top: 70px;
+		transition: all 0.4s ease-in-out;
+		background-color: $white;
+		z-index: 280;
+
+		@include breakpoint(0, 1024px) {
+			overflow: hidden;
+			width: 0;
+
+			&.active {
+				width: 250px;
+			}
+		}
+
+		@include breakpoint(xs) {
+			transition: all 0.5s ease-in-out;
+			margin-left: -100%;
+			position: fixed;
+			left: 90px;
+
+			&.active {
+				margin-left: 0;
+			}
+		}
+		.nav {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+			.item {
+				font-size: 14px;
+				padding: 8px 16px;
+				color: transparentize($black, 0.5);
+				text-transform: capitalize;
+
+				&:hover {
+					color: transparentize($green,0.4);
+					background-color: transparentize($black, 0.97);
+				}
+				&-head {
+					padding-top: 16px;
+					padding-bottom: 8px;
+					font-size: 16px;
+					text-transform: uppercase;
+					color: transparentize($black, 0.3);
+					font-weight: bold;
+					cursor: default;
+
+					&:hover {
+						background-color: transparent;
+						color: transparentize($black, 0.3);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+/*
+ * WonderFul Admin Template
+ *
+ * Author  : Muhibbudin Suretno
+ * E-mail  : muhibbudinsuretno1@gmail.com
+ * License : MIT
+ * 
+ * Intro ...
+ *
+ * Base Component :
+ * - Navbar
+ * - Sidebar
+ * - Secondary Sidebar
+ *
+ * Additional Component :
+ * - Search
+ * - Button
+ * - Alert
+ * - Form
+ * - Card
+ * - List
+ * - Tab
+ * - Table
+ *
+ * Pages :
+ * - Dashboard
+ * - Messages
+ * - Notifications
+ * - Trash
+ * - Help
+ * - Sign In
+ * - Profile
+ * - Product
+ * - Post
+ * - Categories
+ * - Tags
+ * - Orders
+ * - Feedbacks
+ * - Blank
+ * - Statistics Visitor
+ * - Statistics Orders
+ * - Statistics Downloads
+ * - Files
+ * - Musics
+ * - Videos
+ * - Photos
+ * - Roles
+ * - Hirarchy
+ * - Activity
+ * - Setting Notifications
+ * - Setting Activity
+ * - Setting Post
+ * - Setting Themes
+ * - Setting Contribute
+ */
+
+@import
+	"helper/color.scss",
+	"helper/function.scss",
+
+	"component/global.scss",
+
+	"component/navbar.scss",
+	"component/sidebar.scss",
+	"component/content.scss",
+	"component/search.scss",
+
+	"component/button.scss",
+	"component/alert.scss",
+	"component/form.scss",
+	"component/card.scss",
+	"component/list.scss",
+	"component/tab.scss",
+	"component/table.scss";

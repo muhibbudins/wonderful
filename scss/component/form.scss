@@ -1,0 +1,17 @@
+input,
+input.form-control {
+    box-shadow: none;
+    padding: 10px 16px;
+    height: auto;
+    font-size: 14px;
+    border-radius: 8px;
+    border-color: transparentize($black, 0.85);
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+    	box-shadow: none;
+    	border-color: $nephritis;
+    }
+}
