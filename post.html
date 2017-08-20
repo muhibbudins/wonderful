@@ -10,6 +10,7 @@
     <!-- Vendor Style -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
 
     <!-- Your Own Style -->
     <link rel="stylesheet" href="css/default.css">
@@ -100,66 +101,17 @@
 
     <!-- Content -->
     <div class="content">
-
-        <table class="table">
-            <tr>
-                <th style="width: 5%;">#</th>
-                <th style="width: 25%;">Title</th>
-                <th style="width: auto;">Description</th>
-                <th style="width: 10%;">Publish At</th>
-                <th style="width: 15%;">Author</th>
-                <th style="width: 5%;">Action</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Possimus rerum expedita dolores qui recusandae</td>
-                <td>Maxime tenetur, fuga quas. Voluptate molestiae at veniam labore soluta minima, minus veritatis quis aut odio!</td>
-                <td>20 Aug, 2017</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-warning btn-sm btn-icon"><i class="fa fa-edit"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Sapiente laudantium qui saepe illum sed necessitatibus mollitia odit</td>
-                <td>Dolore, quod, a! Molestias ipsam, totam voluptas corporis excepturi quae, eos eveniet. Dolore porro id fugit, qui maxime est cupiditate dolorum rem.</td>
-                <td>20 Aug, 2017</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-warning btn-sm btn-icon"><i class="fa fa-edit"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Magni corporis debitis explicabo modi sequi laborum laudantium maiores</td>
-                <td>Autem laborum perspiciatis consectetur itaque repellendus rem soluta voluptas quos, minima libero molestias veniam voluptates suscipit, consequatur placeat at dolorem facere quidem?</td>
-                <td>20 Aug, 2017</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-warning btn-sm btn-icon"><i class="fa fa-edit"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Nisi, illum, delectus? Officiis natus iste</td>
-                <td>Suscipit illo alias ipsa culpa quos laudantium, soluta est facere beatae minus nam quo excepturi error officiis dicta quisquam blanditiis fuga assumenda.</td>
-                <td>20 Aug, 2017</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-warning btn-sm btn-icon"><i class="fa fa-edit"></i></a>
-                </td>
-            </tr>
-            <tr>
-                <td>(n)</td>
-                <td>Suscipit veritatis non illum ducimus, doloremque fugit quia</td>
-                <td>Minima illo atque odit porro incidunt assumenda. Similique ad magni ab sint fugit impedit mollitia excepturi? Molestias odio natus ipsa molestiae labore!</td>
-                <td>20 Aug, 2017</td>
-                <td>Admin</td>
-                <td>
-                    <a href="" class="btn btn-warning btn-sm btn-icon"><i class="fa fa-edit"></i></a>
-                </td>
-            </tr>
+        <table id="table-post" class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Description</th>
+                    <th>Description</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
         </table>
     </div>
 
@@ -168,9 +120,11 @@
     <!-- Vendor Script -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/datatables.min.js"></script>
 
     <!-- Your Own Script -->
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
 </body>
 
 </html>

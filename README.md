@@ -1,5 +1,10 @@
 # WonderFul Admin Template 🚧
 
+[![GitHub issues](https://img.shields.io/github/issues/muhibbudins/wonderful.svg)](https://github.com/muhibbudins/wonderful/issues)
+[![GitHub forks](https://img.shields.io/github/forks/muhibbudins/wonderful.svg)](https://github.com/muhibbudins/wonderful/network)
+[![GitHub stars](https://img.shields.io/github/stars/muhibbudins/wonderful.svg)](https://github.com/muhibbudins/wonderful/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/muhibbudins/wonderful/master/LICENSE)
+
 ![Preview](https://muhibbudins.github.io/wonderful/img/preview.png)
 
 Wonderful is free admin template and will be forever open source, maybe i will late for maintenance this project because something reason. But i promise to maintenance and update this project.
