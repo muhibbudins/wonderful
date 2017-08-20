@@ -48,46 +48,20 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Card 🚧
 - List
 - Tab
-- Table 🚧
+- Table 🚧 (jQuery DataTable Custom)
 
 ### Available Pages
 
 - Dashboard
-- Messages
-- Notifications
-- Trash
-- Help
 - Sign In ✔
-- Profile
-- Product
-- Post
-- Categories
-- Tags
-- Orders
-- Feedbacks
-- Blank ✔
-- Statistics Visitor
-- Statistics Orders
-- Statistics Downloads
-- Files
-- Musics
-- Videos
-- Photos
-- Roles
-- Hirarchy
-- Activity
-- Setting Notifications
-- Setting Activity
-- Setting Post
-- Setting Themes
-- Setting Contribute
 
 ### Third Party
 
-- Bootstrap CSS 3 v3.3.7 (Custom)
+- Bootstrap CSS 3 v3.3.7 (Custom without Glyphicons, Breadcrumbs, Pager, Labels, Jumbotron, Thumbnails, Alerts, Progress bars, Responsive embed, Wells, Carousel, Alert Dismissal, Carousel Functionality, Affix)
 - jQuery v3.1.1
 - Font Awesome
 - Animate.css
+- jQuery DataTable
 
 ## About Author
 
