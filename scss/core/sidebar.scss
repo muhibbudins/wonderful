@@ -27,12 +27,15 @@
 		background-color: transparent;
 
 		.item {
-			font-size: 20px;
 			color: transparentize($white, 0.4);
 			padding: 20px 33px;
 			border-top: 1px solid transparentize($white, 0.7);
 			border-radius: 0;
-
+			
+			i {
+				width: 30px;
+				font-size: 24px;
+			}
 			&:first-child {
 				border-top: 0;
 			}
@@ -47,7 +50,6 @@
 			}
 			&.active {
 				color: transparentize($white, 0);
-				font-size: 24px;
 				
 				&:before {
 					visibility: visible;

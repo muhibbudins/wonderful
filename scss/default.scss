@@ -1,74 +1,30 @@
 /*
  * WonderFul Admin Template
  *
+ * Wonderful is FREE Admin template build under Bootstrap Framework with full customize and don't worry SASS/SCSS included.
+ * 
  * Author  : Muhibbudin Suretno
  * E-mail  : muhibbudinsuretno1@gmail.com
  * License : MIT
+ * Version : 
+ * Github  : https://github.com/muhibbudins/wonderful
  * 
- * Intro ...
- *
- * Base Component :
- * - Navbar
- * - Sidebar
- * - Secondary Sidebar
- *
- * Additional Component :
- * - Search
- * - Button
- * - Alert
- * - Form
- * - Card
- * - List
- * - Tab
- * - Table
- *
- * Pages :
- * - Dashboard
- * - Messages
- * - Notifications
- * - Trash
- * - Help
- * - Sign In
- * - Profile
- * - Product
- * - Post
- * - Categories
- * - Tags
- * - Orders
- * - Feedbacks
- * - Blank
- * - Statistics Visitor
- * - Statistics Orders
- * - Statistics Downloads
- * - Files
- * - Musics
- * - Videos
- * - Photos
- * - Roles
- * - Hirarchy
- * - Activity
- * - Setting Notifications
- * - Setting Activity
- * - Setting Post
- * - Setting Themes
- * - Setting Contribute
  */
 
 @import
 	"helper/color.scss",
 	"helper/function.scss",
+	"helper/fonts.scss",
 
-	"component/global.scss",
+	"icon/font-awesome.scss",
+	"icon/ion-icons.scss",
 
-	"component/navbar.scss",
-	"component/sidebar.scss",
-	"component/content.scss",
-	"component/search.scss",
+	"core/global.scss",
+	"core/navbar.scss",
+	"core/sidebar.scss",
+	"core/content.scss",
 
 	"component/button.scss",
-	"component/alert.scss",
 	"component/form.scss",
 	"component/card.scss",
-	"component/list.scss",
-	"component/tab.scss",
 	"component/table.scss";

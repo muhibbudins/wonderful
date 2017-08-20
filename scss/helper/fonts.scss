@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Oswald|Roboto+Slab');
+
+$serif : "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+$sansSerif : "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sansSerifBold : "Oswald";
+
+body {
+	font-family: $sansSerif;
+}
+
+.item-head {
+	font-family: $sansSerifBold;
+}
