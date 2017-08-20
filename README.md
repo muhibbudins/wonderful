@@ -1,5 +1,7 @@
 # WonderFul Admin Template 🚧
 
+![Preview](https://muhibbudins.github.io/wonderful/img/preview.png)
+
 Wonderful is free admin template and will be forever open source, maybe i will late for maintenance this project because something reason. But i promise to maintenance and update this project.
 
 Thanks for using Wonderful Admin Template! 🙏
@@ -26,13 +28,13 @@ Use `gulp` for single compile or `gulp watch` for watching changed file and reco
 
 In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipulation and i include Animate.css for animation. For latest update (20 Aug, 2017) below component and pages updated.
 
-### Base Component (✅ for done task)
+### Base Component
 
-- Navbar ✅
-- Sidebar ✅
-- Secondary Sidebar ✅
+- Navbar ✔
+- Sidebar ✔
+- Secondary Sidebar ✔
 
-### Additional Component (✅ for done task)
+### Additional Component
 
 - Search
 - Button 🚧
@@ -43,14 +45,14 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Tab
 - Table 🚧
 
-### Available Pages (✅ for done task)
+### Available Pages
 
 - Dashboard
 - Messages
 - Notifications
 - Trash
 - Help
-- Sign In ✅
+- Sign In ✔
 - Profile
 - Product
 - Post
@@ -58,7 +60,7 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Tags
 - Orders
 - Feedbacks
-- Blank ✅
+- Blank ✔
 - Statistics Visitor
 - Statistics Orders
 - Statistics Downloads
@@ -84,7 +86,7 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 
 ## About Author
 
-My name Eno currently i work as UI Designer & Frontend Developer but sometimes i use my rest time to contribute Open Source or create Open Source project. You can see my [LinkedIn](), [Pinterest Account]() or [Personal Website]() to know more about me. Thanks for coming to this Repository
+My name Eno currently i work as UI Designer & Frontend Developer but sometimes i use my rest time to contribute Open Source or create Open Source project. You can see my [LinkedIn](https://www.linkedin.com/in/muhibbudins/), [Pinterest Account](https://id.pinterest.com/msuretno/) or [Personal Website](https://muhibbudins.github.io/) to know more about me. Thanks for coming to this Repository
 
 If you have some question please ask on the Issue page or touch me by email at muhibbudinsuretno1@gmail.com
 
