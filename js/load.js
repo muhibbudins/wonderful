@@ -1,13 +1,12 @@
 // Loading Animation
-$.when(new ldBar(".loading-bar", {
-	'path': 'M59.528,32.801V17.535c5.591-0.975,9.357-2.777,9.357-4.844c0-3.102-8.455-5.617-18.884-5.617 s-18.884,2.515-18.884,5.617c0,2.067,3.765,3.869,9.357,4.844v15.266c-12.886,4.047-22.234,16.084-22.234,30.305 c0,17.541,14.22,31.761,31.761,31.761s31.761-14.22,31.761-31.761C81.761,48.885,72.414,36.849,59.528,32.801z',
-	'fill': 'data:ldbar/res,bubble(#A4D254,#fff,50,2)'	
-}).set(100)).done(function() {
-	setTimeout(function() {
+// $.when(new ldBar(".loading-bar", {
+// 	'path': 'M59.528,32.801V17.535c5.591-0.975,9.357-2.777,9.357-4.844c0-3.102-8.455-5.617-18.884-5.617 s-18.884,2.515-18.884,5.617c0,2.067,3.765,3.869,9.357,4.844v15.266c-12.886,4.047-22.234,16.084-22.234,30.305 c0,17.541,14.22,31.761,31.761,31.761s31.761-14.22,31.761-31.761C81.761,48.885,72.414,36.849,59.528,32.801z',
+// 	'fill': 'data:ldbar/res,bubble(#A4D254,#fff,50,2)'	
+// }).set(100)).done(function() {
+// 	setTimeout(function() {
 		$('.content-loading').fadeOut();
-	}, 1000);
-});
-
+// 	}, 1000);
+// });
 
 $(document).ready(function() {
 
@@ -80,5 +79,27 @@ $(document).ready(function() {
 			$navbarResponsive.addClass('active');
 			$content.css('opacity','0.7');
 		});
+
+		dynamicMenu();
 	});
 });
+
+// Function to set active menu by param
+// Edit this function if you use custom routes!
+function dynamicMenu() {
+	var param = window.location.pathname,
+		query = param.split('/');
+
+	if (typeof query[2] !== 'undefined' && query[2] !== '' && query[2].indexOf('index.html') === -1) {
+		$('a.item-side, .nav.nav-pills.nav-stacked').removeClass('active');
+
+		var _self = $('a.item-side[href="'+ query[2] +'"]'),
+			parent = _self.parent().parent(),
+			target = parent.attr('id');
+
+		parent.addClass('active')
+		$('a.item[data-target="'+ target +'"]').addClass('active');
+	} else {
+		$('a.item-side[data-target="first-menu"], .nav.nav-pills.nav-stacked[id="first-menu"]').addClass('active');
+	}
+}
