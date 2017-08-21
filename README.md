@@ -33,21 +33,14 @@ Use `gulp` for single compile or `gulp watch` for watching changed file and reco
 
 In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipulation and i include Animate.css for animation. For latest update (20 Aug, 2017) below component and pages updated.
 
-### Base Component
+### Component
 
 - Navbar ✔
 - Sidebar ✔
 - Secondary Sidebar ✔
-
-### Additional Component
-
-- Search
 - Button 🚧
-- Alert
 - Form 🚧
 - Card 🚧
-- List
-- Tab
 - Table 🚧 (jQuery DataTable Custom)
 
 ### Available Pages
