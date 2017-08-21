@@ -33,20 +33,40 @@ Use `gulp` for single compile or `gulp watch` for watching changed file and reco
 
 In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipulation and i include Animate.css for animation. For latest update (20 Aug, 2017) below component and pages updated.
 
-### Component
+### Available Component
 
 - Navbar ✔
 - Sidebar ✔
 - Secondary Sidebar ✔
-- Button 🚧
-- Form 🚧
-- Card 🚧
-- Table 🚧 (jQuery DataTable Custom)
+- Typography ⏳
+- Icon ✖
+- Button ⏳
+- Table ⏳
+- Form ⏳
+- Alert ✖
+- Card ⏳
+- Hero ⏳
+- Code ✖
+- Markdown ✖
+- Editor ✖
+- Chart ✖
+- Grid ✖
+- Masonry ✖
+- Progress ✖
+- Modal ✖
 
-### Available Pages
+### Sample Pages
 
-- Dashboard
+- Create / Update
+- List Post
+- List Card
+- List Item
+- Setting
 - Sign In ✔
+- Profile ⏳
+- Messages
+- Notifications
+- Trash
 
 ### Third Party
 
@@ -55,6 +75,9 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Font Awesome
 - Animate.css
 - jQuery DataTable
+- Ion Icons
+- Loading Bar (Loading.io)
+- Sweet Alert
 
 ## About Author
 

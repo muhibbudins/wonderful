@@ -4,7 +4,7 @@ $.when(new ldBar(".loading-bar", {
 	'fill': 'data:ldbar/res,bubble(#A4D254,#fff,50,2)'	
 }).set(100)).done(function() {
 	setTimeout(function() {
-		$('.content-loading').hide();
+		$('.content-loading').fadeOut();
 	}, 1000);
 });
 
