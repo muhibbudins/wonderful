@@ -1,6 +1,9 @@
 .sidebar {
 	max-width: 90px;
 	height: 100vh;
+	max-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	background: #DCE35B;
 	background: -webkit-linear-gradient(to top, #45B649, #DCE35B);
 	background: linear-gradient(to top, #45B649, #DCE35B);
@@ -71,6 +74,9 @@
 	&-menu {
 		width: 250px;
 		height: 100vh;
+		max-height: 100vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
 		border-right: 1px solid transparentize($black, 0.9);
 		float: left;
 		padding: 10px;

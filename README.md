@@ -78,6 +78,7 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Ion Icons
 - Loading Bar (Loading.io)
 - Sweet Alert
+- Nice Scroll
 
 ## About Author
 
