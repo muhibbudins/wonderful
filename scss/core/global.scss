@@ -7,8 +7,8 @@ $sansSerifBold : "Oswald";
 body {
 	font-family: $sansSerif;
 	background-color: $white;
-	font-size: 13px;
-	line-height: 1.6;
+	font-size: 14px;
+	line-height: 1.7;
 	
 	@include breakpoint(xs) {
 		background-color: $black;

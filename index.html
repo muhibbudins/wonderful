@@ -60,28 +60,85 @@
             <div class="title-pages">Introduction</div>
             <p>Wonderful adalah sebuah admin template gratis yang di buat dengan pondasi dari Bootstrap Framework dan jQuery beserta dependensinya. Wonderful memiliki bentuk struktur yang cukup unik dari foldering dan designnya, disini saya mengedepankan kebersihan pada konten dan lebih modern dibandingkan dengan admin template lain yang terlalu penuh dengan konten yang seharusnya tidak ada di tempatnya.</p>
             <p>Sebelum melanjutkan saya meminta maaf bila saya akan terlambat untuk melakukan <i>update</i> dan <i>maintenance</i> karena beberapa urusan lain, tapi saya berjanji untuk terus maintain project ini meskipun dengan beberapa kesibukan yang ada. Dan yang pasti untuk di garis bawahi bahwa project ini akan <u>selamanya open source</u>. Silahkan bila anda ingin merubah, memodifikasi, mendistribusikan ulang dll. berdasarkan lisensi yang berlaku (<b>MIT License</b>).</p>
+            <p>Anda akan sangat mudah untuk mengkustom template ini karena saya sudah menyediakan source berupa SASS/SCSS beserta cara menggunakanya (baca lebih lanjut tentang <a href="style-guide.html.html">Style Guide</a>).</p>
             <br>
-            <a href="" class="btn btn-info">Download Wonderful 1.0.0</a>
-            <a href="" class="btn btn-link"><i class="fa fa-github"></i> Contribute Project</a>
+            <a href="" class="btn btn-lg btn-info">Sorry, On Going Development</a>
+            <a href="https://github.com/muhibbudins/wonderful" class="btn btn-lg btn-default"><i class="fa fa-github"></i> Contribute Project</a>
         </div>
         <br>
         <div id="structure">
             <div class="title-pages">Folder Structure</div>
+            <p>Berikut adalah struktur folder yang saya buat, disini saya buat serapi mungkin dengan mengelompokan kegunaan dan bagian-bagianya, diantaranya :</p>
             <pre>
-                |- css
-                |- fonts
-                |- img
-                |\_
-                |  |- favicon
-                |- js
-                |- partials
-                |- scss
-                |\_
-                |  |- components
-                |  |- core
-                |  |- helper
-                |  |- icon
+root
+|- css
+|- fonts
+|- img
+|\
+| |- favicon
+|- js
+|- partials
+|- scss
+|\
+| |- components
+| |- core
+| |- helper
+| |- icon
+|- html file / another file type
             </pre>
+            <p>Pada struktur diatas pada root terdapat beberapa folder diantaranya <b>css</b>, <b>fonts</b>, <b>img</b>, <b>js</b>, <b>partials</b> & <b>scss</b> dan untuk file template disini saya simpan di root semua (disini saya belum sempat menggunakan static compiler semacam jekyll atau lainnya <b>mungkin nanti di versi selanjutnya 😃</b>).</p>
+            <p>Berdasarkan struktur diatas berikut definisi dari masing-masing folder :</p>
+            <ul>
+                <li>css : sebagai destinasi hasil konversi sass/scss file dan juga sebagai tempat file css dari dependensi yang template ini gunakan</li>
+                <li>fonts : sebagai tempat menyimpan fonts yang di gunakan oleh file css</li>
+                <li>img : sebagai tempat asset berupa image dan didalamnya ada folder favicon (anda bisa merubah logo pada title bar anda dengan merubah logo pada folder ini)</li>
+                <li>js : sebagai tempat semua script javascript yang berjalan di template ini</li>
+                <li>partials : sebagai tempat menyimpan part dari html file yang akan di load oleh javascript untuk di masukan ke dalam template yang berada pada fungsi di file <b>./js/load.js</b>.</li>
+                <li>scss : sebagai tempat source file untuk style yang digunakan oleh template ini di dalamnya saya kategorikan lagi berdasarkan kegunaannya yaitu source component, core, helper & icon. Component berisi semua style seperti modal, table, form dll. Core berisi style yang global untuk semua halaman, Helper berisi kumpulan fungsi dan variable untuk digunakan oleh semua source style dan Icon berisi icon yg digunakan diantaranya Ion Icons & Font Awesome (baca lebih lanjut tentang <a href="icon.html">Customize Icon</a>)</li>
+            </ul>
+        </div>
+        <div id="component">
+            <div class="title-pages">Component</div>
+            <p>Pada template ini saya membuat beberapa component yang dapat anda gunakan diantaranya (yang menggunakan tanda ✔ berarti sudah siap digunakan dan lainnya masih dalam proses) :</p>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="icon.html">Icon</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="confirm.html">Confirm</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="hero.html">Hero</a></li>
+                <li><a href="code.html">Code</a></li>
+                <li><a href="markdown.html">Markdown</a></li>
+                <li><a href="editor.html">Editor</a></li>
+                <li><a href="chart.html">Chart</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="masonry.html">Masonry</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="modal.html">Modal</a></li>
+            </ul>
+        </div>
+        <div id="dependency">
+            <div class="title-pages">Dependency</div>
+            <p>Disini saya juga menggunakan <i>Third Party</i> yang berdasar pada jQuery yang tentunya open source juga, diantaranya :</p>
+            <ul>
+                <li>Bootstrap CSS 3 v3.3.7 (Custom without Glyphicons, Breadcrumbs, Pager, Labels, Jumbotron, Thumbnails, Alerts, Progress bars, Responsive embed, Wells, Carousel, Alert Dismissal, Carousel Functionality, Affix)</li>
+                <li>jQuery v3.1.1</li>
+                <li>Font Awesome</li>
+                <li>Animate.css</li>
+                <li>jQuery DataTable</li>
+                <li>Ion Icons</li>
+                <li>Loading Bar (Loading.io)</li>
+                <li>Sweet Alert</li>
+                <li>Nice Scroll</li>
+            </ul>
+        </div>
+        <div id="license">
+            <div class="title-pages">License</div>
+            <p>Anda tidak perlu khawatir menggunakan template ini, karena saya telah berjanji akan memberikan template ini secara GRATIS kepada siapapun termasuk untuk mendistribusikan ulang, memodifikasi dll. sesuai dengan lisensi yang saya gunakan yaitu <b>MIT License.</b></p>
+            <p>Saya sangat berterima kasih bila anda mau menggunakan template ini. 😊</p>
         </div>
     </section>
 
