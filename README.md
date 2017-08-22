@@ -38,22 +38,22 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Navbar ✔
 - Sidebar ✔
 - Secondary Sidebar ✔
-- Typography ⏳
-- Icon ✖
-- Button ⏳
-- Table ⏳
-- Form ⏳
-- Alert ✖
-- Card ⏳
-- Hero ⏳
-- Code ✖
-- Markdown ✖
-- Editor ✖
-- Chart ✖
-- Grid ✖
-- Masonry ✖
-- Progress ✖
-- Modal ✖
+- Typography
+- Icon
+- Button
+- Table
+- Form
+- Alert
+- Card
+- Hero
+- Code
+- Markdown
+- Editor
+- Chart
+- Grid
+- Masonry
+- Progress
+- Modal
 
 ### Sample Pages
 
@@ -63,7 +63,7 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - List Item
 - Setting
 - Sign In ✔
-- Profile ⏳
+- Profile
 - Messages
 - Notifications
 - Trash
