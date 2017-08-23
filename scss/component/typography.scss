@@ -21,6 +21,11 @@
 		margin-bottom: 10px;
 		color: lighten($black, 15%);
 	}
+	&-small {
+		font-size: 18px;
+		padding-bottom: 6px;
+		margin-top: 20px;
+	}
 }
 
 .description {
