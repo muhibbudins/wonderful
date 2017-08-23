@@ -74,11 +74,14 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - jQuery v3.1.1
 - Font Awesome
 - Animate.css
-- jQuery DataTable
+- DataTables
 - Ion Icons
 - Loading Bar (Loading.io)
 - Sweet Alert
 - Nice Scroll
+- Prism Syntax Highlighter
+- Markdown Browser
+- Summernote
 
 ## About Author
 
