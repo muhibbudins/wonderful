@@ -1,0 +1,80 @@
+.masonry {
+    column-count: 4;
+    column-gap: 1em;
+
+	&-item {
+		display: inline-block;
+		margin: 0 0 1em;
+		width: 100%;
+	}
+	&-content {
+		background-color: #eee;
+		border-radius: 10px;
+		overflow: hidden;
+		text-align: center;
+
+		img {
+			width: auto;
+			height: 100%;
+		}
+	}
+	&-flexbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-small {
+		height: 300px;
+	}
+	&-medium {
+		height: 400px;
+	}
+	&-large {
+		height: 600px;
+	}
+
+	@each $c, $h in $colors {
+		&-#{$c} {
+			background-color: $h;
+			color: $white;
+			
+			@if $c == 'clouds' {
+				color: $asbestos;
+			}
+			
+			@if $c == 'default' {
+				color: $asbestos;
+			}
+
+			&:hover,
+			&:focus,
+			&:visited,
+			&:active, {
+				color: $white;
+				background-color: darken($h, 3%);
+
+				@if $c == 'clouds' or $c == 'link' or $c == 'default' {
+					color: $asbestos;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(400px, 0) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@include breakpoint(700px, 0) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@include breakpoint(900px, 0) {
+    .masonry {
+        column-count: 4;
+    }
+}
