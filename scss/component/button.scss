@@ -61,7 +61,7 @@ $colors : (turquoise #1ABC9C), (emerald #2ECC71), (peterriver #3498DB), (amethys
 			&:visited,
 			&:active, {
 				color: $white;
-				background-color: darken($h, 5%);
+				background-color: darken($h, 3%);
 
 				@if $c == 'clouds' or $c == 'link' or $c == 'default' {
 					color: $asbestos;

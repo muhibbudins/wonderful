@@ -1,3 +1,16 @@
+@import
+	"helper/color.scss",
+	"helper/function.scss";
+
 .btn {
 	margin: 3px;
+}
+
+.column {
+	background-color: $clouds;
+	padding: 20px;
+	text-align: center;
+}
+.row {
+	margin-bottom: 5px;
 }
