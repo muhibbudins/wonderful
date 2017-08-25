@@ -38,9 +38,9 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Navbar ✔
 - Sidebar ✔
 - Secondary Sidebar ✔
-- Typography
+- Typography ✔
 - Icon
-- Button
+- Button ✔
 - Table
 - Form
 - Alert

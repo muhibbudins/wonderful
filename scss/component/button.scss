@@ -1,7 +1,15 @@
+$colors : (turquoise #1ABC9C), (emerald #2ECC71), (peterriver #3498DB), (amethyst #9B59B6), (wetasphalt #34495E), 
+		  (greensea #16A085), (nephritis #27AE60), (belizehole #2980B9), (wisteria #8E44AD), (midnightblue #2C3E50), 
+		  (sunflower #F1C40F), (carrot #E67E22), (alizarin #E74C3C), (clouds #ECF0F1), (concrete #95A5A6), (orange #F39C12), 
+		  (pumpkin #D35400), (pomegranate #C0392B), (silver #BDC3C7), (asbestos #7F8C8D), (white #FFFFFF), (black #525252),
+		  (info #3498DB), (success #27AE60), (primary #2980B9), (warning #F1C40F), (danger #E74C3C), (default #ECF0F1), 
+		  (link #ECF0F1);
+
 .btn {
 	border: 0;
-	padding: 10px 16px;
 	border-radius: 8px;
+	padding: 8px 16px;
+	font-size: 12px;
 	
 	&:hover,
 	&:active,
@@ -9,57 +17,96 @@
 	&:focus {
 		outline: none;
 	}
-	&-outline {
-		background-color: transparent;
-		border: 1px solid;
+	&-xs {
+		font-size: 10px;
+		padding: 2px 8px;
+	}
+	&-sm {
+		padding: 6px 14px;
+	}
+	&-md {
+		padding: 10px 16px;
+	}
+	&-lg {
+		margin: 5px;
+		font-size: 14px;
+		padding: 14px 20px;
 	}
 	&-flat {
 		border-radius: 0;
 	}
-	&-capital {
-		text-transform: uppercase;
+	&-rounded {
+		border-radius: 20px;
 	}
-	&-link {
-		color: $peterriver;
-		background-color: $clouds;
-	}
-	&-white {
-		color: $peterriver;
-		background-color: $clouds;
+
+	@each $c, $h in $colors {
+		&-#{$c} {
+			background-color: $h;
+			color: $white;
+			
+			@if $c == 'clouds' {
+				color: $asbestos;
+			}
+			
+			@if $c == 'link' {
+				color: $peterriver;
+			}
+
+			@if $c == 'default' {
+				color: $asbestos;
+			}
+
+			&:hover,
+			&:focus,
+			&:visited,
+			&:active, {
+				color: $white;
+				background-color: darken($h, 5%);
+
+				@if $c == 'clouds' or $c == 'link' or $c == 'default' {
+					color: $asbestos;
+				}
+			}
+		}
 	}
 }
 
 .btn-outline {
-	&-primary {
-		color: $belizehole;
-		border-color: $belizehole;
-	}
-	&-success {
-		color: $nephritis;
-		border-color: $nephritis;
-	}
-	&-warning {
-		color: $sunflower;
-		border-color: $sunflower
-	}
-	&-default {
-		color: $silver;
-		border-color: $silver;
-	}
-	&-danger {
-		color: $alizarin;
-		border-color: $alizarin;
-	}
-	&-link {
-		color: $peterriver;
-		border-color: $peterriver;
-	}
-	&-info {
-		color: $peterriver;
-		border-color: $peterriver;
-	}
-	&-white {
-		color: $silver;
-		border-color: $silver;
+	border: 1px solid;
+	background-color: transparent;
+
+	@each $c, $h in $colors {
+		&.btn-#{$c} {
+			border-color: $h;
+			color: $h;
+
+			
+			@if $c == 'clouds' or $c == 'default' {
+				color: $asbestos;
+				border-color: darken($h, 3%);
+			}
+			
+			@if $c == 'link' {
+				color: $peterriver;
+				border-color: $peterriver;
+			}
+
+			&:hover,
+			&:focus,
+			&:visited,
+			&:active, {
+				color: $white;
+				background-color: $h;
+
+				@if $c == 'clouds' or $c == 'default' {
+					color: $asbestos;
+				}
+			
+				@if $c == 'link' {
+					color: $peterriver;
+					background-color: transparent;
+				}
+			}
+		}
 	}
 }
