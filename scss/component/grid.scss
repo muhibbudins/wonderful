@@ -1,0 +1,17 @@
+.container {
+
+}
+.row {
+	&.small-gutter {
+		[class^=col-] {
+			padding: 0 5px;
+
+			&:first-child {
+				padding-left: 15px;
+			}
+			&:last-child {
+				padding-right: 15px;
+			}
+		}
+	}
+}
