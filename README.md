@@ -39,21 +39,22 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 - Sidebar ✔
 - Secondary Sidebar ✔
 - Typography ✔
-- Icon
 - Button ✔
-- Table
 - Form
-- Alert
 - Card
-- Hero
-- Code
-- Markdown
+- Icon
+- Grid ✔
+- Masonry ✔
+- Table
 - Editor
-- Chart
-- Grid
-- Masonry
-- Progress
+- Markdown
+- Alert
+- Confirm
 - Modal
+- Progress
+- Hero
+- Chart
+- Code
 
 ### Sample Pages
 
