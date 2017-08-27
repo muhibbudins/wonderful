@@ -15,3 +15,15 @@
 		}
 	}
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    display: inline;
+    min-width: auto;
+    padding: 0;
+    margin-left: 0;
+    border: 0;
+
+    &:hover {
+    	border: 0;
+    }
+}
