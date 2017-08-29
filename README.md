@@ -86,7 +86,7 @@ In this project i use Bootstrap CSS Framework for base & jQuery for DOM Manipula
 
 ## About Author
 
-My name Eno currently i work as UI Designer & Frontend Developer but sometimes i use my rest time to contribute Open Source or create Open Source project. You can see my [LinkedIn](https://www.linkedin.com/in/muhibbudins/), [Pinterest Account](https://id.pinterest.com/msuretno/) or [Personal Website](https://muhibbudins.github.io/) to know more about me. Thanks for coming to this Repository
+My name Eno currently i work as UI Designer & Frontend Developer but sometimes i use my time to contribute Open Source project. You can see my [LinkedIn](https://www.linkedin.com/in/muhibbudins/), [Pinterest Account](https://id.pinterest.com/msuretno/) or [Personal Website](https://muhibbudins.github.io/) to know more about me. Thanks for coming to this Repository.
 
 If you have some question please ask on the Issue page or touch me by email at muhibbudinsuretno1@gmail.com
 
