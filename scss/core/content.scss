@@ -1,7 +1,6 @@
 .content {
-	width: calc(100vw - 250px - 90px);
+	width: calc(100vw - 230px - 90px);
 	height: 100vh;
-	max-height: 100vh;
 	background-color: lighten($clouds, 3%);
 	color: transparentize($black, 0.3);
 	float: left;
@@ -9,8 +8,7 @@
 	padding-top: 90px;
 	transition: all 0.3s ease-in-out;
 	word-wrap: break-word;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden;
 
 	@include breakpoint(0, 1024px) {
 		width: calc(100vw - 25px - 90px);

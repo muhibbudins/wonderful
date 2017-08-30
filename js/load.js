@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 			if (window.innerWidth > 767 && window.innerWidth <= 1024) {
 				$sidebarMenu.addClass('active');
-				$('.content').css('width', 'calc(100vw - 250px - 90px)');
+				$('.content').css('width', 'calc(100vw - 230px - 90px)');
 			}
 		});
 
@@ -78,6 +78,10 @@ $(document).ready(function() {
 		
 			$navbarResponsive.addClass('active');
 			$content.css('opacity','0.7');
+		});
+		
+		$('.content').niceScroll({
+			cursorwidth: '2px'
 		});
 
 		dynamicMenu();

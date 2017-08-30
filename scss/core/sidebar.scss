@@ -1,5 +1,5 @@
 .sidebar {
-	max-width: 90px;
+	width: 90px;
 	height: 100vh;
 	max-height: 100vh;
 	overflow-x: hidden;
@@ -72,10 +72,9 @@
 		}
 	}
 	&-menu {
-		width: 250px;
+		width: 230px;
 		height: 100vh;
-		max-height: 100vh;
-		overflow-x: hidden;
+		overflow: hidden;
 		overflow-y: scroll;
 		border-right: 1px solid transparentize($black, 0.9);
 		float: left;
@@ -86,11 +85,10 @@
 		z-index: 280;
 
 		@include breakpoint(0, 1024px) {
-			overflow: hidden;
 			width: 0;
 
 			&.active {
-				width: 250px;
+				width: 230px;
 			}
 		}
 
