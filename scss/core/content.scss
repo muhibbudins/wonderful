@@ -2,7 +2,7 @@
 	width: calc(100vw - 250px - 90px);
 	height: 100vh;
 	max-height: 100vh;
-	background-color: $white;
+	background-color: lighten($clouds, 3%);
 	color: transparentize($black, 0.3);
 	float: left;
 	padding: 20px;
