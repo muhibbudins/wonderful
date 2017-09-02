@@ -52,8 +52,8 @@
 					transition: all 0.3s ease-in-out;
 					font-size: 14px;
 					background-color: transparent;
-					color: $green;
-					border-color: $green;
+					color: $peterriver;
+					border: 1px solid $peterriver;
 				}
 			}
 		}
@@ -106,8 +106,8 @@
 			border: 1px solid transparent;
 
 			&:hover {
-				color: $sunflower !important;
-				border-color: $sunflower;
+				color: $peterriver !important;
+				border-color: $peterriver;
 			}
 		}
 

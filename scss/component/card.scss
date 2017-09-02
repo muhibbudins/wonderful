@@ -8,7 +8,31 @@ $radius : 6px;
 	box-shadow: 0 3px 8px 0px rgba(120, 120, 120, 0.10);
 	margin-bottom: 16px;
 	border: 1px solid $clouds;
+	color: $asbestos;
 
+	@each $c, $h in $colors {
+		&-#{$c} {
+			background-color: $h;
+			color: $white;
+			
+			@if $c == 'clouds' {
+				color: $asbestos;
+			}
+
+			@if $c == 'default' {
+				color: $asbestos;
+			}
+			
+			@if $c == 'link' or $h == #FFFFFF {
+				color: $peterriver;
+				background-color: $white;
+			}
+		}
+	}
+	&-small {
+		min-height: 50px;
+		text-align: center;
+	}
 	&-clean {
 		border: 0;
 		box-shadow: 0 3px 10px 0px rgba(120, 120, 120, 0.25);

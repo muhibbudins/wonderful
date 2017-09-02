@@ -8,6 +8,14 @@
 	position: relative;
 	margin-bottom: 20px;
 
+	@include breakpoint(sm) {
+	    background-size: cover;
+	    background-position: center center;
+	}
+	@include breakpoint(xs) {
+	    background-size: cover;
+	    background-position: center center;
+	}
 	&-overlay {
 		width: 100%;
 		height: 350px;

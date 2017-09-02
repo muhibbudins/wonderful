@@ -5,7 +5,7 @@
 // }).set(100)).done(function() {
 // 	setTimeout(function() {
 		$('.content-loading').fadeOut();
-// 	}, 1000);
+	// }, 1000);
 // });
 
 $(document).ready(function() {
@@ -56,7 +56,7 @@ $(document).ready(function() {
 			$sidebar.removeClass('active');
 			$navbarResponsive.removeClass('active');
 			$sidebarMenu.removeClass('active');
-			$content.css('opacity','1');
+			$content.removeClass('active');
 
 			if (window.innerWidth > 767 && window.innerWidth <= 1024) {
 				$('.content').css('width', 'calc(100vw - 25px - 90px)');
@@ -67,17 +67,17 @@ $(document).ready(function() {
 		$triggerSidebar.bind('click', function(e) {
 			e.preventDefault();
 
-			$sidebar.addClass('active');
-			$sidebarMenu.addClass('active');
-			$content.css('opacity','0.7');
+			$sidebar.toggleClass('active');
+			$sidebarMenu.toggleClass('active');
+			$content.toggleClass('active');
 		});
 
 		// Trigger navbar at mobile
 		$triggerNavbar.bind('click', function(e) {
 			e.preventDefault();
 		
-			$navbarResponsive.addClass('active');
-			$content.css('opacity','0.7');
+			$navbarResponsive.toggleClass('active');
+			$content.toggleClass('active');
 		});
 		
 		$('.content').niceScroll({

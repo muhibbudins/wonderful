@@ -2,6 +2,10 @@
 	&.note-frame {
 		border-color: $clouds;
 	}
+	&.fullscreen {
+		bottom: 0;
+		height: 100vh;
+	}
 	.panel-heading {
 		background-color: $white;
 		border-color: $clouds;
@@ -13,6 +17,14 @@
 		border: 1px solid $clouds;
 		padding: 8px 12px;
 		background-color: $white;
+		outline: none;
+
+		&:hover,
+		&:focus,
+		&:visited,
+		&:active {
+			outline: none;
+		}
 	}
 
 	.btn-default:active,

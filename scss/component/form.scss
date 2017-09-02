@@ -1,17 +1,56 @@
 input,
-input.form-control {
+.form-control {
     box-shadow: none;
-    // padding: 10px 16px;
+    padding: 8px 16px;
     height: auto;
     font-size: 14px;
     border-radius: 8px;
     border-color: transparentize($black, 0.85);
 
+    &-xs {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    &-sm {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    &-md {
+        padding: 8px 16px;
+    }
+    &-lg {
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+    &-flat {
+        border-radius: 0;
+    }
+    &-rounded {
+        border-radius: 20px;
+        padding: 8px 18px;
+    }
     &:hover,
     &:active,
     &:focus,
     &:visited {
     	box-shadow: none;
     	border-color: $nephritis;
+    }
+}
+
+.form-group,
+.input-group {
+    margin-bottom: 5px;
+
+    .btn {
+        padding: 10px 16px 11px 16px;
+    }
+    input + .input-group-addon {
+        border-left: 0;
+    }
+    .input-group-addon {
+        border: 1px solid rgba(82, 82, 82, 0.15);
+        background-color: $white;
+        color: $asbestos;
     }
 }

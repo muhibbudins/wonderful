@@ -36,9 +36,8 @@
 	}
 
 	@each $c, $h in $colors {
-		$color : lighten($h, 20%);
 		&-#{$c} {
-			background-color: $color;
+			background-color: $h;
 			color: $white;
 			
 			@if $c == 'clouds' {
@@ -52,9 +51,9 @@
 			&:hover,
 			&:focus,
 			&:visited,
-			&:active, {
+			&:active {
 				color: $white;
-				background-color: darken($color, 10%);
+				background-color: darken($h, 10%);
 
 				@if $c == 'clouds' or $c == 'link' or $c == 'default' {
 					color: $asbestos;

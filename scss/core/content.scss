@@ -1,7 +1,7 @@
 .content {
 	width: calc(100vw - 230px - 90px);
 	height: 100vh;
-	background-color: lighten($clouds, 3%);
+	background-color: lighten($clouds, 5%);
 	color: transparentize($black, 0.3);
 	float: left;
 	padding: 20px;
@@ -9,12 +9,16 @@
 	transition: all 0.3s ease-in-out;
 	word-wrap: break-word;
 	overflow: hidden;
+	opacity: 1;
 
 	@include breakpoint(0, 1024px) {
 		width: calc(100vw - 25px - 90px);
 	}
 	@include breakpoint(xs) {
 		width: 100%;
+	}
+	&.active {
+		opacity: 0.7;
 	}
 	&-inner {
 		display: block;

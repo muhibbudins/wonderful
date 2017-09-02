@@ -3,6 +3,7 @@
 	border-radius: 8px;
 	padding: 8px 16px;
 	font-size: 12px;
+	transition: all 0.3s cubic-bezier(0.32, 0.18, 0.43, 1.05);
 	
 	&:hover,
 	&:active,
@@ -31,6 +32,9 @@
 	&-rounded {
 		border-radius: 20px;
 	}
+	.fa {
+		margin-right: 5px;
+	}
 
 	@each $c, $h in $colors {
 		&-#{$c} {
@@ -43,6 +47,7 @@
 			
 			@if $c == 'link' {
 				color: $peterriver;
+				background-color: transparent;
 			}
 
 			@if $c == 'default' {
@@ -52,12 +57,17 @@
 			&:hover,
 			&:focus,
 			&:visited,
-			&:active, {
+			&:active {
 				color: $white;
-				background-color: darken($h, 3%);
+				background-color: darken($h, 10%);
 
-				@if $c == 'clouds' or $c == 'link' or $c == 'default' {
+				@if $c == 'clouds' or $c == 'default' {
 					color: $asbestos;
+				}
+				
+				@if $c == 'link' {
+					color: $peterriver;
+					background-color: transparent;
 				}
 			}
 		}
@@ -76,7 +86,7 @@
 			
 			@if $c == 'clouds' or $c == 'default' {
 				color: $asbestos;
-				border-color: darken($h, 3%);
+				border-color: darken($h, 10%);
 			}
 			
 			@if $c == 'link' {
@@ -87,7 +97,7 @@
 			&:hover,
 			&:focus,
 			&:visited,
-			&:active, {
+			&:active {
 				color: $white;
 				background-color: $h;
 
