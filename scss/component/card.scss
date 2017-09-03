@@ -33,6 +33,9 @@ $radius : 6px;
 		min-height: 50px;
 		text-align: center;
 	}
+	&-small > &-content {
+		padding: 10px;
+	}
 	&-clean {
 		border: 0;
 		box-shadow: 0 3px 10px 0px rgba(120, 120, 120, 0.25);
