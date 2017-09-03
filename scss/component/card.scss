@@ -72,7 +72,7 @@ $radius : 6px;
 	}
 	&-header {
 		border-bottom: 1px solid transparentize($black, 0.9);
-		padding: 12px 20px;
+		padding: 10px 20px;
 		text-align: left;
 		font-size: 20px;
 		display: flex;
@@ -130,24 +130,38 @@ $radius : 6px;
 				background-color: transparent;
 			}
 		}
-		.dropdown-menu {
-			border: $clouds;
-
-			li > a {
-				color: $black;
-				padding: 8px 16px;
-			}
-		}
 	}
 	&-content {
 		padding: 10px 20px;
+		position: relative;
+		overflow: hidden;
+
+		&-icon {
+			font-size: 130px;
+			position: absolute;
+			bottom: -60px;
+			right: 10px;
+			opacity: 0.1;
+		}
+	}
+	&-number {
+		font-size: 64px;
+		font-family: $sansSerifBold;
+		text-align: center;
+		margin: 10px auto;
 	}
 	&-footer {
 		border-top: 1px solid transparentize($black, 0.9);
-		padding: 16px;
+		padding: 12px 20px;
 		text-align: center;
-
-		a {
+		background-color: transparentize($clouds, 0.8);
+		
+		&-clean {
+			background-color: $white;
+			border-top: 0;
+			text-align: left;
+		}
+		a:not(.btn) {
 			color: transparentize($black, 0.4);
 		}
 	}
