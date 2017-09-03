@@ -146,6 +146,21 @@ $radius : 6px;
 			right: 10px;
 			opacity: 0.1;
 		}
+		form {
+			width: 50%;
+			text-align: left;
+			margin: 10px;
+
+			@include breakpoint(xs) {
+				width: 100%;
+			}
+			label {
+				color: transparentize($black, 0.4);
+			}
+			.form-group {
+				margin-bottom: 10px;
+			}
+		}
 	}
 	&-number {
 		font-size: 64px;
