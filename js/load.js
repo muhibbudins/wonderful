@@ -4,8 +4,8 @@
 // 	'fill': 'data:ldbar/res,bubble(#A4D254,#fff,50,2)'	
 // }).set(100)).done(function() {
 // 	setTimeout(function() {
-		$('.content-loading').fadeOut();
-	// }, 1000);
+		$('.content-loading').hide();
+// 	}, 1000);
 // });
 
 $(document).ready(function() {
@@ -85,6 +85,7 @@ $(document).ready(function() {
 		});
 
 		dynamicMenu();
+		preventCaching();
 	});
 });
 
@@ -106,4 +107,27 @@ function dynamicMenu() {
 	} else {
 		$('a.item-side[data-target="first-menu"], .nav.nav-pills.nav-stacked[id="first-menu"]').addClass('active');
 	}
+}
+
+function createHash() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 32; i++)
+    text += possible.charAt(Math.ceil(Math.random() * possible.length));
+
+  return text;
+}
+
+function preventCaching() {
+	var script = $('script[type="text/javascript"]'),
+		style  = $('link[rel="stylesheet"]');
+
+	style.map(function(k,v) {
+		// $(v).attr('href', $(v).attr('href') + '?' + createHash());
+	});
+
+	script.map(function(k,v) {
+		// $(v).attr('src', $(v).attr('src') + '?' + createHash());
+	});
 }

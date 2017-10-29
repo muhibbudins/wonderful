@@ -12,7 +12,7 @@ gulp.task('default', function () {
   	.pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        browsers: ['last 4 version'],
         cascade: false
     }))
     .pipe(sourcemaps.write())
