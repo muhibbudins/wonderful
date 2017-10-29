@@ -1,3 +1,23 @@
+form {
+    text-align: left;
+    margin: 10px;
+
+    @include breakpoint(xs) {
+        width: 100%;
+    }
+    label {
+        color: transparentize($black, 0.4);
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+.form {
+    &-half {
+        width: 50%;
+    }
+}
+
 input,
 .form-control {
     box-shadow: none;

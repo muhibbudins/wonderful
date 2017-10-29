@@ -11,5 +11,6 @@
 .open>.dropdown-menu {
 	display: block;
 	transform: scale(1.0);
+	transform-origin: 100% top;
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.49, 0.96);
 }

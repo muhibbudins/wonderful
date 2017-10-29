@@ -1,7 +1,7 @@
 .content {
 	width: calc(100vw - 230px - 90px);
 	height: 100vh;
-	background-color: lighten($clouds, 5%);
+	background-color:lighten($clouds, 5%);
 	color: transparentize($black, 0.3);
 	float: left;
 	padding: 20px;

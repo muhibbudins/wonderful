@@ -10,7 +10,7 @@
 	background-color: $white;
 	padding: 20px;
 	text-align: center;
-	border: 1px solid $clouds;
+	border: 1px solid darken($clouds, 5%);
 }
 .row {
 	margin-bottom: 5px;
